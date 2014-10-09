@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Second Silly Project</string>
+    <string name="otherString">Some words need to go here today.</string>
+    <string name="sillyString">Silly string, but not from a can.</string>
+
+</resources>

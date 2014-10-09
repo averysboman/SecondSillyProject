@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class WeirdActivity extends Activity
@@ -15,6 +16,7 @@ public class WeirdActivity extends Activity
 	private Button appButton;
 	private TextView appText;
 	private ArrayList<Integer> colorList;
+	private RelativeLayout appBackground;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -35,6 +37,8 @@ public class WeirdActivity extends Activity
 		colorList.add(R.color.black);
 		colorList.add(R.color.prettyPurple);
 		colorList.add(R.color.uglyBrown);
+		colorList.add(R.color.blue);
+		colorList.add(R.color.red);
 	}
 	
 	private void setupListeners()
@@ -49,7 +53,7 @@ public class WeirdActivity extends Activity
 				int randomIndex = (int) (Math.random() * colorList.size());
 				
 				
-				appButton.setBackgroundResource(colorList.get(randomIndex));
+				appBackground.setBackgroundResource(colorList.get(randomIndex));
 			}
 		});
 	}
